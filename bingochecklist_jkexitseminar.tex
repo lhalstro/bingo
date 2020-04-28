@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{amsmath, amssymb}
+\usepackage{marvosym}
+\usepackage[left=1.0in,right=1.1in,top=1.0in,bottom=0.75in]{geometry}
+
+\newcommand{\sep}{1mm}
+\newcommand{\negsep}{-3mm}
+
+\begin{document}
+
+\begin{center}
+\begin{Large}
+Checklist for John Karasinski's Exit Seminar bingo boxes
+\end{Large}
+\vspace{0.15in}
+
+%Annual
+
+% Trump State of the Union Address
+
+\today
+
+\end{center}
+
+\begin{longtable}{l p {3.25in} }
+
+Said  & Item \\[\sep]
+\hline\\[\negsep]
+\endfirsthead
+
+Said  & Item \\[\sep]
+\hline\\[\negsep]
+\endhead
+
+\hline\hline
+\endfoot
+
+\input{checklist_jkexitseminar.tex}
+
+\end{longtable}
+
+\end{document}
