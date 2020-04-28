@@ -13,17 +13,17 @@
 
 
 %path to list of words to go in bingo squares
-\newcommand\listofwords{bingolist.tex}
+\newcommand\listofwords{bingolist_jkexitseminar.tex}
 
 %path to image in center of bingo board
-\newcommand\centerimage{Donald_Trump_official_portrait.jpg}
+\newcommand\centerimage{jk_sim.png}
 
 \newcommand\titletext{
 Bingo
 
-President Trump's State of the Union Address
+John Karasinski's Exit Seminar
 
-04 February 2020
+28 April 2020
 }
 
 
@@ -120,7 +120,8 @@ President Trump's State of the Union Address
 % Set image in free space:
 \renewcommand{\freespace}{
 	\filldraw[fill=gray!90, draw=black] ($(\col,-\row)-(1,1)$) rectangle ($(\col,-\row)$) ;
-	\node [scale=1.2] at ($(\col,-\row)-(0.5,0.5)$) {\includegraphics[scale=0.06, clip=true, trim=0 300 0 10]{\centerimage}};
+	\node (img) [scale=1.0] at ($(\col,-\row)-(0.5,0.5)$) {\includegraphics[width=\Sizeinner]{\centerimage}};
+    \node [align=center, color=white] at (img.center){Free Space};
 
 }
 
