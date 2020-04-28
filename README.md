@@ -7,6 +7,15 @@ This project is ideal for televised political events like State of the Union or 
 Although I made some changes to the LaTeX code, the bulk of the code -- and all of the hard stuff -- 
 was taken from [tex.stackexchange.com](http://tex.stackexchange.com/questions/63357/automatically-generated-bingo-cards).
 
+## Basic Usage
+1. Update bingolist.tex with the list of words you want randomly distributed in bingo tiles
+2. Update bingocards.tex path to bingolist.txt, card title, and free space image.
+3. Compile bingocards.tex to get bingo cards
+4. Run ```shell
+       python makechecklist.py
+       ```
+       to update master checklist
+
 ## Introduction
 
 The list of phrases (and don't make any individual phrase very long) 

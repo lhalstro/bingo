@@ -9,22 +9,34 @@
 % Jesse Hamner, 2016-2020
 
 
-% cloned by Logan Halsrom 4/27/2020 for John's exit seminar
+% Forked by Logan Halsrom 4/27/2020 for John's exit seminar
 
 
 %path to list of words to go in bingo squares
-\newcommand\listofwords{bingolist_jkexitseminar.tex}
+\newcommand\listofwords{bingolist.tex}
+% \newcommand\listofwords{bingolist_jkexitseminar.tex}
 
 %path to image in center of bingo board
-\newcommand\centerimage{jk_sim.png}
+\newcommand\centerimage{Images/Donald_Trump_official_portrait.jpg}
+% \newcommand\centerimage{Images/jk_sim.png}
 
 \newcommand\titletext{
 Bingo
 
-John Karasinski's Exit Seminar
+President Trump's State of the Union Address
 
-28 April 2020
+04 February 2020
 }
+
+% \newcommand\titletext{
+% Bingo
+
+% John Karasinski's Exit Seminar
+
+% 28 April 2020
+% }
+
+
 
 
 \usepackage{xstring}
@@ -109,16 +121,16 @@ John Karasinski's Exit Seminar
 \end{center}
 }
 
-\newcommand{\freespace}{
-	\filldraw[fill=gray!35, draw=black] ($(\col,-\row)-(1,1)$) rectangle ($(\col,-\row)$) ;
-% "Free Space" -- that's the joke:
-    \node [scale=1.2] at ($(\col,-\row)-(0.5,0.3)$) {Candidate};
-    \node [scale=1.2] at ($(\col,-\row)-(0.5,0.5)$) {Talks Past};
-    \node [scale=1.2] at ($(\col,-\row)-(0.5,0.7)$) {Allotted Time};
-}
+% \newcommand{\freespace}{
+% 	\filldraw[fill=gray!35, draw=black] ($(\col,-\row)-(1,1)$) rectangle ($(\col,-\row)$) ;
+% % "Free Space" -- that's the joke:
+%     \node [scale=1.2] at ($(\col,-\row)-(0.5,0.3)$) {};
+%     \node [scale=1.2] at ($(\col,-\row)-(0.5,0.5)$) {Free Space};
+%     \node [scale=1.2] at ($(\col,-\row)-(0.5,0.7)$) {};
+% }
 
 % Set image in free space:
-\renewcommand{\freespace}{
+\newcommand{\freespace}{
 	\filldraw[fill=gray!90, draw=black] ($(\col,-\row)-(1,1)$) rectangle ($(\col,-\row)$) ;
 	\node (img) [scale=1.0] at ($(\col,-\row)-(0.5,0.5)$) {\includegraphics[width=\Sizeinner]{\centerimage}};
     \node [align=center, color=white] at (img.center){Free Space};
