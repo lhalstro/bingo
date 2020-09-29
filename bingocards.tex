@@ -16,32 +16,32 @@
 
 
 %PATH TO LIST OF WORDS TO GO IN BINGO SQUARES
-% \newcommand\listofwords{bingolist.tex}
-\newcommand\listofwords{bingolist_jkexitseminar.tex}
+\newcommand\listofwords{bingolist.tex}
+% \newcommand\listofwords{bingolist_jkexitseminar.tex}
 
 %PATH TO IMAGE IN CENTER OF BINGO BOARD
-% \newcommand\centerimage{Images/Donald_Trump_official_portrait.jpg}
-\newcommand\centerimage{Images/jk_sim.png}
+\newcommand\centerimage{Images/Donald_Trump_official_portrait.jpg}
+% \newcommand\centerimage{Images/jk_sim.png}
 
-%TEXT TO DISPLAY BELOW BINGO GRID
-% \newcommand\titletext{
-% Bingo
-
-% President Trump's State of the Union Address
-
-% 04 February 2020
-% }
-
+% TEXT TO DISPLAY BELOW BINGO GRID
 \newcommand\titletext{
 Bingo
 
-John Karasinski's Exit Seminar
-
-28 April 2020
+2020 Presidential Debate
 }
 
+% \newcommand\titletext{
+% Bingo
+
+% John Karasinski's Exit Seminar
+
+% 28 April 2020
+% }
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{xstring}
 \usepackage{pgffor}
@@ -51,7 +51,7 @@ John Karasinski's Exit Seminar
 \usepackage{tabularx}
 \usepackage{amssymb}
 
-\input{random.tex} % this isn't supposed to exist yet, so if you get errors about it, ignore them
+% \input{random.tex} % this isn't supposed to exist yet, so if you get errors about it, ignore them
 \newcount\randomnum
 % The LaTeX3 coding language, -expl3-, uses : and _ as 'letters' in
 % function and variable names.
@@ -183,13 +183,6 @@ John Karasinski's Exit Seminar
 
 \begin{document}
 
-%\myItems{this;will;produce;an;error;because;there;aren't;enough;items}
-
-% These items should be contained in a separate file, formatted
-% so that it's easier to read and change without altering the original
-% LaTeX file:
-
-%\myItems{``Believe me"; Tax returns; Benghazi; Shot of Bill Clinton in audience; Clinton Foundation; ``Make America Great Again"; Tim Kaine; Build ``the wall"; Heckler interrupts debate; Candidate talks past allotted time; Gun ban; NAFTA; Black Lives Matter; ``Basket of deplorables"; Alt-right; Florida; Mike Pence; Moderator interrupts candidate; Free market; ``My record shows ...''; Terrorism; Candidate demands an apology; John McCain; Pam Bondi; Health of candidate; Trump charity; ``Liberal media"; Shot of Melania Trump in audience; ``What do you have to lose?"; China; Taxes; Climate change; Middle East; Emails; ``I've employed thousands of people"; Joke about Trump's hair; Candidate says the other is ``disqualified"; Clinton mentions children--any children; Emails; Temperament; Transparency; ``Stronger Together"; NAFTA; Bankruptcy; Birther; Audience laughs; NATO; ``Tremendous success"; ``I can fix it"; President Obama; Ronald Reagan; Audience claps; Rigged; Trump says he was against the Iraq War; The Second Amendment; Trade agreement; Skittles; Income inequality; Top 1\%; Political correctness }
 
 % read in the list of 'squares' from the file you have written:
 \input{\listofwords}
